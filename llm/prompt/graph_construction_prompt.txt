@@ -1,0 +1,30 @@
+You are an educational expert responsible for constructing a multi-domain educational knowledge graph.
+
+Given:
+1. The question text: <question text>
+2. The domain of the question: <domain>
+3. The main knowledge concept assessed by the question: <main knowledge concept>
+4. Candidate knowledge concepts from the same and different domains: <candidate concepts>
+5. Existing prerequisite relations in the current graph: <existing prerequisite relations>
+
+Your task is to:
+1. Identify prerequisite knowledge concepts within the same domain that are necessary for understanding the main knowledge concept.
+2. Identify semantically or functionally related knowledge concepts from different domains.
+3. Determine whether the question requires knowledge from multiple domains.
+4. Avoid generating circular prerequisite dependencies. The prerequisite relations must follow a directed acyclic graph (DAG) structure. If adding a prerequisite relation would introduce a cycle, discard that relation.
+5. If the main knowledge concept is unseen in the current graph, integrate it into the existing graph by identifying its prerequisites and correlated concepts.
+
+Ensure that:
+- Prerequisite relations represent learning dependencies within the same domain.
+- Correlation relations represent semantic or functional associations across domains.
+- The output contains only concepts selected from the candidate concepts.
+- The generated relations are educationally meaningful and logically consistent.
+
+Return the response strictly in the following format without additional explanation:
+
+{
+"question text": <question text>,
+"main knowledge concept": <main knowledge concept>,
+"prerequisite": <prerequisite concepts>,
+"correlation": <correlated concepts>
+}

@@ -1,0 +1,54 @@
+{
+  "JuniorH": {
+    "available": true,
+    "train": "junior/train.txt",
+    "test": "junior/test.txt",
+    "graph": "junior/junior_graph.json",
+    "qmatrix": "junior/junior_qmatrix.json",
+    "n_concepts": 139,
+    "n_questions": 170,
+    "n_question_difficulty": 50,
+    "n_domain_transition": 50,
+    "n_domain_coverage": 50,
+    "sequence_fields": ["concept_id", "response", "question_id", "question_difficulty", "domain_signal"]
+  },
+  "SeniorH": {
+    "available": true,
+    "train": "senior/train.txt",
+    "test": "senior/test.txt",
+    "graph": "senior/senior_graph.json",
+    "qmatrix": "senior/senior_qmatrix.json",
+    "n_concepts": 198,
+    "n_questions": 264,
+    "n_question_difficulty": 30,
+    "n_domain_transition": 50,
+    "n_domain_coverage": 50,
+    "sequence_fields": ["concept_id", "response", "question_id", "question_difficulty", "domain_signal"]
+  },
+  "PTADiscJP": {
+    "available": true,
+    "train": "ptadisc_jp/train.txt",
+    "test": "ptadisc_jp/test.txt",
+    "graph": "ptadisc_jp/ptadisc_jp_graph.json",
+    "qmatrix": "ptadisc_jp/ptadisc_jp_qmatrix.json",
+    "n_concepts": 1245,
+    "n_questions": 27820,
+    "n_question_difficulty": 30,
+    "n_domain_transition": 50,
+    "n_domain_coverage": 50,
+    "sequence_fields": ["concept_id", "response", "question_id", "question_difficulty", "domain_signal"]
+  },
+  "PTADiscDS": {
+    "available": true,
+    "train": "ptadisc_ds/train.txt",
+    "test": "ptadisc_ds/test.txt",
+    "graph": "ptadisc_ds/ptadisc_ds_graph.json",
+    "qmatrix": "ptadisc_ds/ptadisc_ds_qmatrix.json",
+    "n_concepts": 634,
+    "n_questions": 18702,
+    "n_question_difficulty": 30,
+    "n_domain_transition": 50,
+    "n_domain_coverage": 50,
+    "sequence_fields": ["concept_id", "response", "question_id", "question_difficulty", "domain_signal"]
+  }
+}
