@@ -1,3 +1,8 @@
 # Incorporating Cognitive Load and Knowledge Transfer for Multi-Domain Knowledge Tracing
 
-Knowledge Tracing (KT) aims to assess students' dynamic knowledge states from their learning histories. While most existing KT methods focus on single-domain learning with notable success, real-world learning scenarios often involve multiple domains simultaneously, introducing two critical factors: cognitive load, arising from managing learning across domains in both temporal and knowledge dimensions, and knowledge transfer, where knowledge states in one domain influence related states both within and across domains. In this paper, we focus on exploring these factors to improve students' knowledge state assessment in multi-domain learning scenarios and propose LT-MKT, a method incorporating cognitive load and knowledge transfer for multi-domain knowledge tracing. Specifically, LT-MKT first integrates textual information from questions and their associated concepts to construct a multi-domain hierarchical graph, leveraging the representational capabilities of large language models. Then, cross-domain features in both the temporal and knowledge dimensions are explicitly modeled to capture the effects of cognitive load. Additionally, a knowledge transfer module is designed to model the propagation of knowledge states within and across domains. By jointly modeling these factors, LT-MKT enables more accurate prediction of students' future performance. Extensive experiments on real-world datasets demonstrate the effectiveness of the proposed method.
+
+This repository contains the core implementation for the paper titled **Incorporating Cognitive Load and Knowledge Transfer for Multi-Domain Knowledge Tracing**, accepted as a `CIKM 2026` **Oral** [[Paper](https://doi.org/10.1145/3799682.3841120)]. 
+
+Authors: [Haotian Zhang](https://scholar.google.com.hk/citations?user=N3V-QjAAAAAJ&hl=zh-CN), Shucun Wang, Jinze Wu,et al.
+
+Email: sosweetzhang@mail.ustc.edu.cn
